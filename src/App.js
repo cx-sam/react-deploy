@@ -5,6 +5,11 @@ import ProfileLink from './components/profile-link';
 
 const links = [
   {
+    id:'twitter_link',
+    href:'www.twitter.com',
+    subtext:'Twitter Link'
+  },
+  {
     id:'btn__zuri',
     href:'https://training.zuri.team/',
     subtext:'Zuri'
@@ -52,8 +57,11 @@ function App() {
        }
        <section>
          <img src='/slack.png' alt='slack logo'/>  <img src='/git.png' alt='git logo'/> 
+         <hr width='70%'/>
        </section>
+       
        <footer>
+       
          <div className="footer-first">
          <img src='/Zuri.Internship_Logo.png' alt='zuri.internship'/>
          </div>
