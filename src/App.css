@@ -96,7 +96,12 @@ footer .footer-middle{
     right: 25%;
     border: 1 red solid;
   }
-  footer .footer-first, .footer-last{
+  footer .footer-first{
+    position: relative;
+    left: 3%;
+    padding: 5px;
+  }
+  .footer-last{
     position: relative;
     right: 3%;
     padding: 5px;
