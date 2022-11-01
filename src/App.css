@@ -84,6 +84,8 @@ footer .footer-middle{
 }
 @media (max-width:480px)  { /* smartphones, Android phones, landscape iPhone */ 
   .profile-link{
+    max-width: 80vw;
+    width: 90%;
     font-size: 13px;
   }
   footer{
