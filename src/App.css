@@ -94,19 +94,25 @@ footer .footer-middle{
     align-items: left;
     position: relative;
     right: 25%;
-    border: 1 red solid;
+    
   }
-  footer .footer-first{
-    position: relative;
-    left: 3%;
-    padding: 5px;
+  .footer-first{
+   
+    width: 100%;
   }
-  .footer-last{
-    position: relative;
-    right: 3%;
-    padding: 5px;
+  .footer-first img{
+
+    margin-right: 30%;
+    
+  }
+  .footer-last img{
+
+    margin-right: 10%;
+    
   }
   footer img{
+    position: relative;
+    left: 2%;
     margin:0;
     width: 30%;
     height: auto;
