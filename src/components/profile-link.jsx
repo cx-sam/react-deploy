@@ -1,8 +1,8 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom';
 const ProfileLink = ({id,href, subtext}) => {
     return (
-        <a className="profile-link" href={href} id={id}> {subtext} </a>
+        <Link  className="profile-link" to={href} id={id}> {subtext} </Link>
     )
 }
 

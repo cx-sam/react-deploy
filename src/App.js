@@ -1,60 +1,23 @@
 import React from 'react';
 import './App.css';
-import Header from './components/header';
-import ProfileLink from './components/profile-link';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Home from './components/home';
 
-const links = [
-  {
-    id:'twitter_link',
-    href:'www.twitter.com',
-    subtext:'Twitter Link'
-  },
-  {
-    id:'btn__zuri',
-    href:'https://training.zuri.team/',
-    subtext:'Zuri'
-  },
-  {
-    id:'books',
-    href:'http://books.zuri.team',
-    subtext:'Books'
-  },
-  {
-    id:'book__python',
-    href:'https://books.zuri.team/python-for-beginners?ref_id=<slack>',
-    subtext:'Books On Python'
-  },
-  {
-    id:'pitch',
-    href:'https://background.zuri.team',
-    subtext:'Pitch'
-  },
-  {
-    id:'book__design',
-    href:'https://books.zuri.team/design-rules',
-    subtext:'Books On Rules Of Design'
-  },
-]
+
 
 
 function App() {
   return (
+    <Router>
     <div className="App">
-    <Header
-     twitter="Samuel Azubuike"
-      imgUrl="/IMG_20200313_075650_9.jpg"
-       altText="A Profile Picture Of Samuel Azubuike"/>
+    <Switch>
+       <Route path="/">
+         <Home/>
+       </Route>
+       
 
-       {
-         links.map(link => {
-           return (
-             <ProfileLink
-             id={link.id}
-             href={link.href}
-             subtext={link.subtext} />
-           )
-         })
-       }
+    </Switch>
+
        <section>
          <img src='/slack.png' alt='slack logo'/>  <img src='/git.png' alt='git logo'/> 
          <hr width='70%'/>
@@ -73,6 +36,7 @@ function App() {
          </div>
        </footer>
     </div>
+    </Router>
   );
 }
 
